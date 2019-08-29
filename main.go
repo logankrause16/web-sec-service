@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello there. Parameter %s!: ", r.URL.Path[1:])
+	_, _ = fmt.Fprintf(w, "Hello there. Parameter %s!: ", r.URL.Path[1:])
 }
 
 func main() {
